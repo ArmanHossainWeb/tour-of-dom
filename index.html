@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of DOM</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>welcome to my DOM</h1>
+    </header>
+    <main>
+        <h1>My Awsome DOM de baba</h1>
+        <ul>
+            <li>jalali set</li>
+            <li>shafayat</li>
+            <li>bonobash</li>
+        </ul>
+        <ul>
+            <li>apple</li>
+            <li>banana</li>
+            <li>carrot</li>
+        </ul>
+    </main>
+    <script src="script/dom.js"></script>
+    <script>
+        const liCollection = document.getElementsByTagName("li")
+        console.log(liCollection);
+        for(const li of liCollection){
+            console.log(li.innerText);
+            
+        }
+        const allHeading = document.getElementsByTagName("h1")
+        console.log(allHeading);
+        for (const h1 of allHeading) {
+            console.log(h1.innerText);
+            
+        }
+        
+        
+    </script>
+</body>
+</html>
