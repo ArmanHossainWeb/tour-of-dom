@@ -5,39 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Of DOM</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .fuitsContainer li{
+            color: tomato;
+        }
+        #fruits-title{
+            color: black ;
+        }
+        .importent-places{
+            color: blueviolet;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto odio, fuga similique doloribus consequatur, explicabo quam illum repellat deserunt quas quae. Pariatur tenetur quo similique fugiat, cumque iste molestias porro.</p>
     </header>
     <main>
         <h1>My Awsome DOM de baba</h1>
-        <ul>
-            <li>jalali set</li>
-            <li>shafayat</li>
-            <li>bonobash</li>
-        </ul>
-        <ul>
-            <li>apple</li>
-            <li>banana</li>
-            <li>carrot</li>
-        </ul>
+        <section>
+            <ul>
+                <li>jalali set</li>
+                <li>shafayat</li>
+                <li>bonobash</li>
+            </ul>
+        </section>
+        <section class="fuitsContainer">
+            <h1 id="fruitsTitle">fruits i have</h1>
+            <ul>
+                <li>apple</li>
+                <li>banana</li>
+                <li>carrot</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="placesTitle">places i like to visit</h1>
+            <ul>
+                <li class="importent-places">shundorban</li>
+                <li class="importent-places">bandorban</li>
+                <li class="importent-places">katabor</li>
+                <li class="other-place">shalbon</li>
+            </ul>
+        </section>
     </main>
     <script src="script/dom.js"></script>
+    <script src="script/stylingjs.js"></script>
     <script>
         const liCollection = document.getElementsByTagName("li")
-        console.log(liCollection);
+        // console.log(liCollection);
         for(const li of liCollection){
-            console.log(li.innerText);
+            // console.log(li.innerText);
             
         }
         const allHeading = document.getElementsByTagName("h1")
-        console.log(allHeading);
+        // console.log(allHeading);
         for (const h1 of allHeading) {
-            console.log(h1.innerText);
+            // console.log(h1.innerText);
+            
+        }
+        const places = document.getElementsByClassName("importent-places")
+        for (const place of places) {
+            // console.log(place.innerText);
+            
+        }
+        const someLi = document.querySelectorAll(".fuitsContainer li");
+        for (const li of someLi) {
+            // console.log(li.innerText);
             
         }
         
+
         
     </script>
 </body>
